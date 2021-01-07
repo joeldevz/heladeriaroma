@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://heladeriaroma.com/dist/css/main.css" />
+  <link rel="stylesheet" href="https://heladeriaroma.com/dist/css/components.css" />
+  <link rel="icon" href="https://heladeriaroma.com/dist/img/logo.jpeg" />
+  <script src="https://kit.fontawesome.com/dc256b1234.js" crossorigin="anonymous"></script>
+  <title>Heladeria Roma</title>
+</head>
+
+<body style="text-align: center;">
+  {{> nav}}
+  <div class="header-nosotros">
+    <div class="hero-nosotros">
+      <p class="font-allura">
+        Desde 1980<br />
+        Haciendo helado
+      </p>
+    </div>
+  </div>
+  <section class="contenedor-nosotros">
+    <h2>Nuestra historia</h2>
+    <div class="contenido-nosotros">
+      <img src="https://heladeriaroma.com/dist/img/sitio.jpg" alt="Terraza" />
+      <p>
+        Fundada hace xx años <br />Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Voluptas, deleniti. Error odit voluptas dolore quod
+        accusamus id excepturi ratione doloribus! Eveniet ratione debitis
+        nihil iure dicta expedita, numquam reiciendis corporis.
+      </p>
+    </div>
+    <div class="contenido-nosotros2">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+        deleniti. Error odit voluptas dolore quod accusamus id excepturi
+        ratione doloribus! Eveniet ratione debitis nihil iure dicta expedita,
+        numquam reiciendis corporis.
+      </p>
+      <img src="https://heladeriaroma.com/dist/img/preparationice (1).jpg" alt="Terraza" />
+    </div>
+    <div class="contenido-nosotros">
+      <img src="https://heladeriaroma.com/dist/img/helado.jpg" alt="Terraza" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+        deleniti. Error odit voluptas dolore quod accusamus id excepturi
+        ratione doloribus! Eveniet ratione debitis nihil iure dicta expedita,
+        numquam reiciendis corporis.
+      </p>
+    </div>
+  </section>
+    <label for="overlay-trigger">
+    <section class="banner2">
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/imagevideo.png" alt="" class="fitBg" /></section>
+  </label>
+
+  <section class="contenedor-testimoniales">
+    <h2>Reseñas</h2>
+    <div class="testimoniales">
+      <div class="testimoinal">
+        <blockquote>
+          Compre para llevar y muy bien preparado. Atención correcta como
+          siempre. Los helados... riquísimos
+        </blockquote>
+        <p>-Carmen Sotillos</p>
+      </div>
+      <div class="testimoinal">
+        <blockquote>
+          Delicioso!!! Súper rico, muchísima variedad de helados y granizados,
+          la calidad espectacular y atención impecable!!! Repetimos seguro.
+        </blockquote>
+        <p>Adyna Mihaela</p>
+      </div>
+      <div class="testimoinal">
+        <blockquote>
+          En los últimos años ha vuelto a mejorar mucho. El trato del
+          encargado muy bueno. Me alegro muchísimo de la cremosidad de los
+          helados y la variedad infinita.
+        </blockquote>
+        <p>Ana Martinez</p>
+      </div>
+    </div>
+
+  </section>
+  <a href="https://heladeriaroma.com/carta.html" class="btn">Ver Reseñas</a>
+  <a href="https://heladeriaroma.com/carta.html" class="btn-outline">Escribir una Reseña</a>
+
+  {{> footer}}
+  {{> nav2}}
+
+  <input type="checkbox" id="overlay-trigger" />
+  <div id="overlay">
+    <div class="modal" role="dialog" aria-describedby="dialog-content">
+      <label for="overlay-trigger" class="modal--close" role="button" id="close" aria-label="Close modal">✕</label>
+      <p id="dialog-content">
+        <video controls width="100%" id="video">
+          <source src="https://heladeriaroma.com/dist/img/notice.mp4" type="video/mp4" />
+        </video>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+  <script src="https://heladeriaroma.com/dist/js/index.js "></script>
+</body>
+
+</html>

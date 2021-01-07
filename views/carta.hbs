@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://heladeriaroma.com/dist/css/main.css" />
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="stylesheet" href="http://heladeriaroma.com/dist/css/components.css" />
+  <link rel="icon" href="http://heladeriaroma.com/dist/img/logo.jpeg" />
+  <script src="https://kit.fontawesome.com/dc256b1234.js" crossorigin="anonymous"></script>
+  <title>Heladeria Roma</title>
+</head>
+
+<body>
+  {{> nav}}
+  <section class="section-menu-card">
+    <div class="" style="text-align: center; margin-bottom:20px">
+      <a class="btn" href="#icecream">Helados</a>
+      <a class="btn" href="#copas">Copas</a>
+      <a class="btn" href="#granizado">Granizado</a>
+    </div>
+    <h2>Nuestras copas</h2>
+    <div class="menu-card bd-grid" id="copas">
+      <article class="card">
+        <div class="card__img" style="width: 80% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/EspecialidadMoratalaz2.png" style="width: 90% !important;"
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Especialidad Moratalaz<br>6.50€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+      <article class="card" style="">
+        <div class="card__img" style="width: 100% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/tulipa1.png" style="width: 90% !important; "
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Tulipa<br>7€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="width: 80% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/copaClasica.png" style="width: 90% !important;"
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Copa Clásica<br>6€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="width: 80% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/copadeHeladoNataNueces.png" style="width: 90% !important;"
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Copa Helado Nata Nueces<br>6€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="width: 80% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/copamerengada.png" style="width: 90% !important;"
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Copa Merengada<br>6€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="width: 80% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/copablanconegro.png" style="width: 90% !important;"
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Copa Negra<br>6.50€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img" style="width: 80% !important; text-align:center;">
+          <img src="http://heladeriaroma.com/dist/img/copas/blancoNegro.png" style="width: 90% !important;"
+            alt="asdasdasd" />
+        </div>
+        <div class="card__allergens">
+
+        </div>
+        <div class="card__precis">
+          <a href="" class="card__icon">
+          </a>
+          <div class="card__name">
+            <h4>Copa Blanco y Negro<br>6.50€</h4>
+          </div>
+          <a href="" class="card__icon">
+          </a>
+        </div>
+      </article>
+    </div>
+    <div>
+      <div class="search" style="text-align: center;">
+        <input type="checkbox" onclick="filter()" name="" id="allergens" />
+        <label for="allergens">No Alergenos</label>
+        <input type="checkbox" onclick="filter()" name="" id="lacteos" />
+        <label for="lacteos">No Lacteos</label>
+        <input type="checkbox" onclick="filter()" name="" id="egg" />
+        <label for="egg">No Huevos</label>
+        <input type="checkbox" onclick="filter()" name="" id="gluten" />
+        <label for="gluten">No Gluten</label>
+        <input type="checkbox" onclick="filter()" name="" id="nuts" />
+        <label for="nuts">No Frutos Secos</label>
+      </div>
+      <div class="precios">
+        <div class="contenedor-precios">
+          <h3>Tarrinas 2 sabores (Terraza)</h3>
+          <p>Grande <span>5.50€</span></p>
+          <p>Mediana <span>4.70€</span></p>
+          <p>Pequeña <span>3.70€</span></p> 
+        </div>
+        <div class="contenedor-precios">
+          <h3>Barquillo 2 sabores (Terraza)</h3>
+            <p>Barquillo Grande <span>5.50€</span></p>
+            <p>Barquillo Pequeño <span>4.70€</span></p>
+            <p>Curucho Grande <span>4.20€</span></p> 
+            <p>Curucho Pequeño <span>3.70€</span></p> 
+            <p>Barquillo Chocolate <span>4.80€</span></p>
+        </div>
+         <div class="contenedor-precios">
+          <h3>Tarrinas 2 sabores (Para llevar)</h3>
+          <p>Grande <span>4.70€</span></p>
+          <p>Mediana <span>4.00€</span></p>
+          <p>Pequeña <span>2.90€</span></p> 
+        </div>
+         <div class="contenedor-precios">
+          <h3>Barquillo 2 sabores (Para LLevar)</h3>
+            <p>Barquillo Grande <span>4.70€</span></p>
+            <p>Barquillo Pequeño <span>4.00€</span></p>
+            <p>Curucho Grande <span>3.50€</span></p> 
+            <p>Curucho Pequeño <span>2.90€</span></p> 
+            <p>Barquillo Chocolate <span>4.30€</span></p>
+        </div>
+      </div>
+      <div class="menu-card bd-grid" id="icecream">
+      </div>
+    </div>
+    <div>
+
+      <div class="menu-card bd-grid" id="granizado">
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="./dist/img/hail/horchataCarta.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Horchata<br>4.80€</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <h2>Granizado<br>4.20€</h2>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoCafe.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Café<br>4.80€</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoChicle.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Chicle</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoCola.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Cola</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoDracula.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Dracula</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoEnergy.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Energy</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoFresa.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Fresa</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoFrutaPasion.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Fruta Pasión</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoFrutasBosque.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Fruta Pasión</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/GranizadoLimon.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Limon</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoMango.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Mango</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoManzana.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Manzana</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoMelon.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Melón</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoMenta.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Menta</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoMojito.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Mojito</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoNaranja.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Naranja</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoPiña.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Piña</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoPiruleta.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Piruleta</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoPlatano.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Platano</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoSandia.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Sandia</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="http://heladeriaroma.com/dist/img/hail/granizadoTropical.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Tropical</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="menu-card bd-grid" id="tarrinas">
+        <h2>Para Llevar<br> Hasta 3 sabores</h2>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="./dist/img/tarrinas/medioLitro.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Tarrina 1/2 Litro<br>8.5€</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img" style="width: 80% !important; text-align:center;">
+            <img src="./dist/img/tarrinas/unLitro.png" style="width: 90% !important;"
+              alt="granizados heladeria roma" loading="lazy" />
+          </div>
+          <div class="card__allergens">
+
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon">
+            </a>
+            <div class="card__name">
+              <h4>Tarrina 1 Litro<br>16€</h4>
+            </div>
+            <a href="" class="card__icon">
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  {{> footer}}
+  {{> nav2}}
+  <script src="http://heladeriaroma.com/dist/js/js.cookie.min.js"></script>
+  <script src="http://heladeriaroma.com/dist/js/index.js"></script>
+  <script src="./dist/js/index.js"></script>
+  <script>
+    filter();
+    PaintIceCream(IceCream);
+  </script>
+</body>
+
+</html>

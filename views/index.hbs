@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Heladeria roma">
+  <meta name="description" content="Heladeria roma">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Heladeria roma">
+  <meta property="og:url" content="https://heladeriaroma.com">
+  <meta property="og:description" content="Heladeria roma">
+  <meta name="theme-color" content="#000" />
+  <link rel="canonical" href="https://heladeriaroma.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://heladeriaroma.com/dist/css/main.css" />
+  <link rel="stylesheet" href="https://heladeriaroma.com/dist/css/components.css" />
+  <link rel="icon" href="https://heladeriaroma.com/dist/img/logo.jpeg" />
+  <script src="https://kit.fontawesome.com/dc256b1234.js" crossorigin="anonymous"></script>
+  <title>Heladeria Roma</title>
+</head>
+
+<body>
+  {{> nav}}
+  <div id="slider">
+    <figure>
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/sitio.jpg" />
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/terraza.jpg" />
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/preparationice (1).jpg" />
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/bolsa.jpg" />
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/terraza.jpg" />
+    </figure>
+    <div class="content">
+      <!--<div>
+         <h2>Heladeria Roma</h2> creo que queda mejor sin esto
+      </div>-->
+    </div>
+  </div>
+  <!--<header style="margin-top: -100px;">
+    <video autoplay loop onloadedmetadata="this.muted=true" preload="auto" style="width: 100%;">
+      <source src="https://heladeriaroma.com/dist/img/1_1.mp4">
+    </video>
+  </header>-->
+  <section class="about" id="about">
+    <div class="contentBx">
+      <h2 class="titleText font-allura">Heladería Roma</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        voluptatibus perspiciatis eaque tempora facilis ad debitis eos nostrum
+        architecto quod, eligendi est eius quis accusantium nemo consequuntur?
+        Repellendus, autem ipsum? <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+        omnis laboriosam aut, tempore similique aperiam corporis hic,
+        praesentium a perferendis eos officia facere itaque modi dicta?
+        Perspiciatis quia culpa ab.
+      </p>
+      <a href="https://heladeriaroma.com/nosotros.html" class="btn">Conocenos</a>
+    </div>
+    <div class="imgBx">
+      <img src="https://heladeriaroma.com/dist/img/helado.jpg" loading="lazy" class="fitBg" alt="" />
+    </div>
+  </section>
+  <section class="destination">
+    <div class="content">
+      <h2 class="titleText">Conoce lo que Vendemos</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sit
+        facilis ipsa iste recusandae exercitationem assumenda, voluptatem
+        ratione repellat reprehenderit expedita magnam nostrum, magni maxime
+        at voluptatum temporibus animi quidem?
+      </p>
+    </div>
+    <div class="destinationList">
+      <div class="box">
+        <div class="imgBx">
+          <img loading="lazy" src="https://heladeriaroma.com/dist/img/granizado.jpg" class="fitBg" alt="" />
+        </div>
+        <div class="content">
+          <h2>
+            Granizados <br />
+            <span>nata</span>
+          </h2>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img loading="lazy" src="https://heladeriaroma.com/dist/img/heladomaquinaroja.jpg" class="fitBg" alt="" />
+        </div>
+        <div class="content">
+          <h2>
+            Helados <br />
+            <span>Nuestra especialidad</span>
+          </h2>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img loading="lazy" src="https://heladeriaroma.com/dist/img/horchata.jpg" class="fitBg" alt="" />
+        </div>
+        <div class="content">
+          <h2>
+            Horchata <br />
+            <span>nata</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://heladeriaroma.com/carta" class="btn">Ver la Carta</a>
+  </section>
+  <label for="overlay-trigger">
+    <section class="banner2">
+      <img loading="lazy" src="https://heladeriaroma.com/dist/img/imagevideo.png" alt="" class="fitBg" /></section>
+  </label>
+
+  {{> footer}}
+  
+
+  <input type="checkbox" id="overlay-trigger" />
+  <div id="overlay">
+    <div class="modal" role="dialog" aria-describedby="dialog-content">
+      <label for="overlay-trigger" class="modal--close" role="button" id="close" aria-label="Close modal">✕</label>
+      <p id="dialog-content">
+        <video controls width="100%" id="video">
+          <source src="https://heladeriaroma.com/dist/img/1_1.mp4" type="video/mp4" />
+        </video>
+      </p>
+    </div>
+  </div>
+  {{> nav2}}
+  <script src="https://heladeriaroma.com/dist/js/js.cookie.min.js"></script>
+  <script src="https://heladeriaroma.com/dist/js/index.js"></script>
+  <script>
+    var closeModal = document.querySelector("#close");
+    closeModal.addEventListener("click", function () {
+      if (document.getElementById("overlay-trigger").checked) {
+        document.getElementById("video").pause();
+      }
+    });
+    if ('serviceWorker' in navigator) {
+      console.log("el navegador admite service worker")
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw_offlinesite.js')
+          .then(function (registration) {
+            console.log("service worker registrado correctamente")
+            console.log("Scopr  " + registration.scope)
+          }), function (err) {
+            console.log("errror ")
+            console.log(err)
+          }
+      })
+    }
+  </script>
+</body>
+
+</html>
