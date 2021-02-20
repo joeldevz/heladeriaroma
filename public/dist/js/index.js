@@ -55,7 +55,7 @@ const IceCream = [
     img: "amarena",
   },
   {
-    name: "Arandanos",
+    name: "Arándanos",
     allergens: true,
     frutosSecos: false,
     Huevo: false,
@@ -73,7 +73,7 @@ const IceCream = [
     img: "dulceLeche",
   },
   {
-    name: "Bombom Ferrero",
+    name: "Bombón Ferrero",
     allergens: true,
     frutosSecos: true,
     Huevo: false,
@@ -262,7 +262,7 @@ const IceCream = [
     img: "frambuesa",
   },
   {
-    name: "Galleta Maria",
+    name: "Galleta María",
     allergens: true,
     frutosSecos: false,
     Huevo: false,
@@ -298,7 +298,7 @@ const IceCream = [
     img: "lecheMerengada",
   },
   {
-    name: "Limon",
+    name: "Limón",
     allergens: false,
     frutosSecos: false,
     Huevo: false,
@@ -316,7 +316,7 @@ const IceCream = [
     img: "mango",
   },
   {
-    name: "Melon",
+    name: "Melón",
     allergens: true,
     frutosSecos: false,
     Huevo: false,
@@ -379,7 +379,7 @@ const IceCream = [
     img: "pistacho",
   },
   {
-    name: "Platano Nevado",
+    name: "Plátano Nevado",
     allergens: true,
     frutosSecos: false,
     Huevo: false,
@@ -397,7 +397,7 @@ const IceCream = [
     img: "ronPasas",
   },
   {
-    name: "Super Sambayon",
+    name: "Super Sambayón",
     allergens: true,
     frutosSecos: false,
     Huevo: true,
@@ -406,7 +406,7 @@ const IceCream = [
     img: "superSambayon",
   },
   {
-    name: "Stracciatela",
+    name: "Stracciatella",
     allergens: true,
     frutosSecos: false,
     Huevo: false,
@@ -415,7 +415,7 @@ const IceCream = [
     img: "platanoNevado",
   },
   {
-    name: "Tiramisu",
+    name: "Tiramisú",
     allergens: true,
     frutosSecos: false,
     Huevo: false,
@@ -424,7 +424,7 @@ const IceCream = [
     img: "tiramisu",
   },
   {
-    name: "Toronchino",
+    name: "Torronchino",
     allergens: true,
     frutosSecos: true,
     Huevo: false,
